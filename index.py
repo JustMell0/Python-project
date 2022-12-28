@@ -70,6 +70,7 @@ def Calculator2():
         else:
             error = ('Wrong request')
             print (error)
+            Calculator2()
 
     #Rectangle
     if a == ('3'):
