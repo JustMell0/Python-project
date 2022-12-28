@@ -45,30 +45,30 @@ def Calculator():
         print (f'Ответ: {ans}')
 
 def Calculator2():
-    q = ['Чему равна сторона? \n', 'Чему равен радиус? \n', 'Чему равна первая сторона? \n', 'Чему равна вторая сторона? \n']
+    q = ['Side equals \n', 'Radius equals \n', 'First side equals \n', 'Second side equals \n']
     
-    a = input(('Выберите фигуру: \n 1.Квадрат \n 2.Круг \n 3.Прямоугольник \n'))
+    a = input(('Select figure: \n 1.Square \n 2.Circle \n 3.Rectangle \n'))
     
 
     #Square
     if a == ('1'):
         first = input(q[0])
         ans = float(first) ** 2
-        print (f'Ответ: {ans}')
+        print (f'Answer: {ans}')
 
     #Circle
     if a == ('2'):
-        pi = input ('Округлять число Пи до 3? \n y = да     n = нет \n')
+        pi = input ('Pi = 3?     y/n\n')
         if pi == ('y'):
             first = input(q[1])
             ans = float(first) ** 2 * 3
-            print (f'Ответ: {ans}')
+            print (f'Answer: {ans}')
         elif pi == ('n'):
             first = input(q[1])
             ans = float(first) ** 2 * math.pi
-            print (f'Ответ: {ans}')
+            print (f'Answer: {ans}')
         else:
-            error = ('Промахнулся по кнопками походу, дядя')
+            error = ('Wrong request')
             print (error)
 
     #Rectangle
@@ -76,7 +76,6 @@ def Calculator2():
         first = input(q[2])
         second = input(q[3])
         ans = float(first) * float(second)
-        print (f'Ответ: {ans}')
-    
+        print (f'Answer: {ans}')
 
 Calculator2()
