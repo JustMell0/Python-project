@@ -1,11 +1,11 @@
 import math
 
-def TestMe():
+def testme():
     q = ['how old am I', 'what OS am i using', 'still enjoying test?']
     ans = ['17', 'MacOS', 'yes']
     score = 0
     for i in range(len(q)):
-        print (q[i])
+        print(q[i])
         a = input ('answer: \n')
         if a == ans[i]:
             print('niiice')
@@ -15,7 +15,7 @@ def TestMe():
     
     print (f'You got {score} points')
 
-def Calculator():
+def calculator():
 
     a = input(('Выберите фигуру: \n 1.Квадрат \n 2.Круг \n 3.Прямоугольник \n'))
 
@@ -44,7 +44,7 @@ def Calculator():
         ans = float(first) * float(second)
         print (f'Ответ: {ans}')
 
-def Calculator2():
+def calculator2():
     q = ['Side equals \n', 'Radius equals \n', 'First side equals \n', 'Second side equals \n']
     
     a = input(('Select figure: \n 1.Square \n 2.Circle \n 3.Rectangle \n'))
@@ -70,7 +70,7 @@ def Calculator2():
         else:
             error = ('Wrong request')
             print (error)
-            Calculator2()
+            calculator2()
 
     #Rectangle
     if a == ('3'):
@@ -79,4 +79,12 @@ def Calculator2():
         ans = float(first) * float(second)
         print (f'Answer: {ans}')
 
-Calculator2()
+calculator2()
+
+for x in range(1, 151):
+    for y in range(1, 151):
+        for z in range(1, 151):
+            for i in range(1, 151):
+                for j in range(1, 151):
+                    if x ** 5 + y ** 5 + z ** 5 + i ** 5== j ** 5:
+                        print(x+y+z+i+j)
